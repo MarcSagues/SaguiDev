@@ -6,27 +6,36 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section id="about" class="py-32 px-6 bg-white/5 backdrop-blur-sm">
+    <section id="about" class="py-32 px-6 relative overflow-hidden">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         <!-- Visual Column -->
-        <div class="relative">
-          <div class="w-full aspect-square rounded-3xl bg-gradient-to-tr from-[hsl(var(--solar-gold))] to-[hsl(var(--accent))] opacity-10 animate-pulse"></div>
-          <div class="absolute inset-0 flex items-center justify-center p-12">
-             <div class="text-[12rem] font-black opacity-5 select-none">BIO</div>
+        <div class="relative group">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-[hsl(var(--solar-gold))] to-[hsl(var(--accent))] opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-700"></div>
+          <div class="relative aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl glass">
+            <img src="assets/profile.png" alt="Marc Sagüés" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
+            <!-- Decorative Floating Elements -->
+            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-3xl glass border border-white/20 backdrop-blur-2xl">
+              <p class="text-xs font-bold uppercase tracking-widest opacity-60 mb-1">Lead Developer</p>
+              <p class="text-xl font-black italic">Marc Sagüés</p>
+            </div>
           </div>
-          <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-[hsl(var(--accent))] opacity-20 blur-[80px] rounded-full"></div>
+          <!-- Experience badge -->
+          <div class="absolute -top-6 -right-6 w-32 h-32 rounded-full glass border border-white/20 flex flex-col items-center justify-center shadow-2xl animate-spin-slow">
+            <span class="text-2xl font-black">5+</span>
+            <span class="text-[10px] font-bold uppercase tracking-tighter opacity-60">Years Exp.</span>
+          </div>
         </div>
 
         <!-- Content Column -->
         <div>
-          <h2 class="text-sm font-bold uppercase tracking-[0.5em] text-[hsl(var(--primary))] mb-6">
-            About Me
+          <h2 class="text-sm font-bold uppercase tracking-[0.5em] text-[hsl(var(--accent))] mb-6">
+            Behind the Code
           </h2>
           <h3 class="text-4xl md:text-5xl font-black mb-8 tracking-tight">
-            Passionate about <span class="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--solar-gold))] to-[hsl(var(--accent))]">Innovation</span> & Design
+            Architecting <span class="italic text-transparent bg-clip-text bg-gradient-to-r from-[hsl(var(--solar-gold))] to-[hsl(var(--accent))]">Digital Sovereignty</span>
           </h3>
           <p class="text-lg opacity-60 mb-10 leading-relaxed">
-            I am a Blockchain Developer with a deep love for frontend aesthetics. I believe that decentralization doesn't have to be complicated or ugly. My mission is to build dApps that are as powerful as they are beautiful.
+            I am a specialized Web3 engineer focused on the intersection of high-performance frontend architectures and decentralized security. My mission is to build interfaces that aren't just tools, but spectacular windows into the blockchain ecosystem.
           </p>
           
           <div class="grid grid-cols-2 gap-8 mb-12">
