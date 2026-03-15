@@ -15,9 +15,9 @@ import { CommonModule } from '@angular/common';
             <img src="assets/profile.png" alt="SaguiDev profile" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
           </div>
           <!-- Experience badge -->
-          <div class="absolute -top-6 -right-6 w-32 h-32 rounded-full glass border border-white/20 flex flex-col items-center justify-center shadow-2xl animate-spin-slow">
-            <span class="text-2xl font-black">5+</span>
-            <span class="text-[10px] font-bold uppercase tracking-tighter opacity-60">Years Exp.</span>
+          <div class="absolute -top-6 -right-6 w-32 h-32 rounded-full bg-[hsl(var(--bg-primary))] border-2 border-[hsl(var(--solar-gold))/30] flex flex-col items-center justify-center shadow-2xl shadow-[hsl(var(--solar-gold))/10] animate-spin-slow z-20">
+            <span class="text-3xl font-black text-[hsl(var(--solar-gold))]">5+</span>
+            <span class="text-[10px] font-black uppercase tracking-widest text-[hsl(var(--text-primary))] opacity-80">Years Exp.</span>
           </div>
         </div>
 
