@@ -27,7 +27,7 @@ import { CommonModule } from '@angular/common';
           <div class="group relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div class="lg:col-span-7 relative overflow-hidden rounded-3xl aspect-video bg-gradient-to-br from-slate-900 to-black shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
               <!-- Project Preview Image -->
-              <img src="assets/dex_preview_mockup.png" alt="Yield DEX Preview" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700">
+              <img src="assets/real_dex_preview.png" alt="Yield DEX Preview" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700">
               
               <!-- Overlay -->
               <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
