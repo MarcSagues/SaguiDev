@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Default: Light Mode */
+  --bg-primary: 210 40% 98%;
+  --text-primary: 230 25% 10%;
+  --solar-gold: 45 100% 50%;
+  --accent: 260 80% 60%;
+  --glass-bg: 0 0% 100% / 0.05;
+  --glass-border: 0 0% 0% / 0.1;
+
+  --transition-slow: 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html.dark {
+  --bg-primary: 230 25% 10%;
+  --text-primary: 210 40% 98%;
+  --solar-gold: 210 20% 80%; /* Turns more 'lunar' in dark mode if desired */
+  --glass-bg: 0 0% 100% / 0.03;
+  --glass-border: 0 0% 100% / 0.08;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: hsl(var(--bg-primary));
+  color: hsl(var(--text-primary));
+  overflow-x: hidden;
+  transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+.glass {
+  background: hsla(var(--glass-bg));
+  backdrop-filter: blur(20px);
+  border: 1px solid hsla(var(--glass-border));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 50%, 0.2);
+  border-radius: 10px;
+}
+
+/* Mascot Animations */
+@keyframes sun-to-moon {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(0.5); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.mascot-transition {
+  animation: sun-to-moon var(--transition-slow);
+}
