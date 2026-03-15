@@ -12,12 +12,7 @@ import { CommonModule } from '@angular/common';
         <div class="relative group">
           <div class="absolute -inset-4 bg-gradient-to-tr from-[hsl(var(--solar-gold))] to-[hsl(var(--accent))] opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-700"></div>
           <div class="relative aspect-[4/5] rounded-[3rem] overflow-hidden border border-white/10 shadow-2xl glass">
-            <img src="assets/profile.png" alt="Marc Sagüés" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
-            <!-- Decorative Floating Elements -->
-            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-3xl glass border border-white/20 backdrop-blur-2xl">
-              <p class="text-xs font-bold uppercase tracking-widest opacity-60 mb-1">Lead Developer</p>
-              <p class="text-xl font-black italic">Marc Sagüés</p>
-            </div>
+            <img src="assets/profile.png" alt="SaguiDev profile" class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110">
           </div>
           <!-- Experience badge -->
           <div class="absolute -top-6 -right-6 w-32 h-32 rounded-full glass border border-white/20 flex flex-col items-center justify-center shadow-2xl animate-spin-slow">
