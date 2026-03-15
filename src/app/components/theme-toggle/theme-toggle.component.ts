@@ -48,7 +48,7 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class ThemeToggleComponent {
-  isDark = signal(true);
+  isDark = signal(false);
   rays = [0, 1, 2, 3, 4, 5, 6, 7];
 
   toggleTheme() {
