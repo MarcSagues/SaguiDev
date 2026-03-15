@@ -31,7 +31,7 @@ import { CommonModule } from '@angular/common';
               
               <!-- Overlay -->
               <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-sm">
-                <a href="https://dex-yjiy.vercel.app/" target="_blank" class="px-10 py-4 rounded-xl bg-white text-black font-black transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
+                <a href="https://dex.msagues.com/" target="_blank" class="px-10 py-4 rounded-xl bg-white text-black font-black transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 shadow-2xl">
                   ENTER DAPP
                 </a>
               </div>
